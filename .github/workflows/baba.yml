@@ -1,8 +1,10 @@
 name: hello-world
-on: push
+on: 
+  push:
+  pull_request:  
 jobs: 
-  my-job:
+  ur-job:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
+      - name: ur-step
         run: echo "Hello World!."
